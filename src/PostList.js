@@ -5,12 +5,12 @@ function PostList({ prop }) {
     const [posts, setPosts] = useState([]);
 
     useEffect(() => {
-        fetch("/sites")
+        fetch("http://localhost:3004/sites")
         .then((r) => r.json())
-        .then(data => setPosts(data.sites))
+        .then(data => setPosts(data))
     }, [])
 
-    const post = posts.map((project) => (
+    const post = posts.map((post) => (
         <Post
         key={post.id}
         id={post.id}

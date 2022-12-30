@@ -16,6 +16,9 @@ function NavBar() {
             <NavLink to="/submitpost">
                 Submit a Post
             </NavLink>
+            <NavLink to="/LogIn">
+                Login
+            </NavLink>
         </div>
     )
 }

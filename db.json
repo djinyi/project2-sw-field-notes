@@ -4,7 +4,7 @@
         "id": 1,
         "name": "Tonto National Monument",
         "user": "Lunis the Loon",
-        "image": "https://imgur.com/ZfVM9DM",
+        "image": "https://i.imgur.com/ZfVM9DM.png",
         "location": "Arizona",
         "date": "September 4, 2022",
         "comments": "The hike was easy. Worth it for the views!"
@@ -13,7 +13,7 @@
         "id": 2,
         "name": "Wupatki National Monument",
         "user": "Miles RazorBeak",
-        "image": "https://imgur.com/xGAr5CJ",
+        "image": "https://i.imgur.com/xGAr5CJ.png",
         "location": "Arizona",
         "date": "October 1st, 2022",
         "comments": "Beautiful place. Can get busy." 
@@ -22,7 +22,7 @@
         "id": 3,
         "name": "Sunset Crater National Park",
         "user": "Kylo the Seedy",
-        "image": "https://imgur.com/sZfdkjS",
+        "image": "https://i.imgur.com/sZfdkjS.png",
         "location": "Arizona",
         "date": "October 11th, 2022",
         "comments": "There are many different places to hike and camp."
@@ -31,7 +31,7 @@
         "id": 4,
         "user": "El Malpais National Conservation Area",
         "poster": "Miles RazorBeak",
-        "image": "https://imgur.com/3NfT5PS",
+        "image": "https://i.imgur.com/3NfT5PS.png",
         "location": "Arizona",
         "date": "October 22nd, 2022",
         "comments": "Don't mess with the cairns. The volunteers meticulously keep them there so that people don't get lost. (It's happened.)"
@@ -40,52 +40,52 @@
         "id": 5,
         "name": "Chaco Canyon Ancient Ruins",
         "user": "Miles RazorBeak",
-        "image": "https://imgur.com/1Cwf63E",
+        "image": "https://i.imgur.com/1Cwf63E.png",
         "location": "New Mexico",
         "date": "November 2nd, 2022",
         "comments": "The mecca for southwestern archeologists!"
     },
     {
-        "id": 1,
+        "id": 6,
         "name": "Kasha-Katuwe Tent Rocks National Monument",
         "user": "Kylo the Seedy",
-        "image": "https://imgur.com/UcB58E9",
+        "image": "https://i.imgur.com/UcB58E9.png",
         "location": "New Mexico",
         "date": "November 10th, 2022",
         "comments": "It's like they say, the rocks look phallic."
     },
     {
-        "id": 6,
+        "id": 7,
         "name": "Coronado Historic Site",
         "user": "Lunis the Loon",
-        "image": "https://imgur.com/QNxgX9F",
+        "image": "https://i.imgur.com/vy4mAT2.png",
         "location": "New Mexico",
         "date": "November 12th, 2022",
         "comments": "Beautiful scenery. I recommenf taking the tour."
     },
     {
-        "id": 7,
+        "id": 8,
         "name": "Gran Quivira Ruins National Monument Historical Marker",
         "user": "Lunis the Loon",
-        "image": "https://imgur.com/yRD9gD5",
+        "image": "https://i.imgur.com/yRD9gD5.png",
         "location": "New Mexico",
         "date": "December 1st, 2022",
         "comments": "Beautiful. Nearby small town Mountainaire is a wonderful place to visit too."
     },
     {
-        "id": 8,
+        "id": 9,
         "name": "Bandelier National Monument",
         "user": "Lunis the Loon",
-        "image": "https://imgur.com/QWqUiS5",
+        "image": "https://i.imgur.com/QWqUiS5.png",
         "location": "New Mexico",
         "date": "December 12th, 2022",
         "comments": "Watch out for the stairs if you are afriad of heights!"
     },
     {
-        "id": 9,
+        "id": 10,
         "name": "Petroglph National Monument",
         "user": "Kylo the Seedy",
-        "image": "https://imgur.com/XSpVjB5",
+        "image": "https://i.imgur.com/XSpVjB5.png",
         "location": "New Mexico",
         "date": "December 16th, 2022",
         "comments": "At night, you can find hundreds of scorpions and other critters."

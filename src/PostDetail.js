@@ -6,7 +6,7 @@ function PostDetail() {
     const { id } = useParams();
 
     useEffect(() => {
-        fetch(`/sites/${id}`)
+        fetch(`http://localhost:3004/${id}`)
         .then((r) => r.json())
         .then(data => setPost(data.site))
     }, [id])
@@ -16,9 +16,9 @@ function PostDetail() {
     return (
         <section>
             <div>
-            <h3>Title = {title}</h3>
-            <h3>User = {user} </h3>
-            <img src={image}></a>
+            <h3>Title: {title}</h3>
+            <h3>User: {user} </h3>
+            <img src={image} />
             <strong>Location = {location}</strong>
             <p>Comments: {comment} </p>
             </div>

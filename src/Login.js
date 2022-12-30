@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
+import { useHistory } from "react-router-dom"
 
 function LogIn({ onLogIn }) {
-    const [formData, setFormData] = 
-    useState({
-        username: "",
-        password: ""
+    const [formData, setFormData] = useState({
+        username: "username",
+        password: "password"
     })
+
+
+    const history = useHistory();
 
     function handleChange(e){
         setFormData({
