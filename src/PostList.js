@@ -35,13 +35,24 @@ function PostList() {
     ))
 
     return(
-        <div className="body">
+        <PostStyle className="body">
             <h2>Posts</h2>
             <div>{post}</div>
             <Link to={`/submitpost`}>Submit New Post</Link>
-        </div>
+
+        </PostStyle>
     )
 }
 
 export default PostList;
+
+const PostStyle = styled.div`
+h2{
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(135, 206, 235, .2)
+}
+`
 
