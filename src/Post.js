@@ -58,13 +58,13 @@ function Post({ id, title, user, image, location, comment, upvotes, downvotes, o
     return (
         <PostDetail>
 
-            <div> 
+            <div className="post"> 
             <h3>Title: {title}</h3>
             <h3>User: {user} </h3>
             <img src={image} alt={title}/>
-            <strong>Location: {location}</strong>
+            <p>Location: {location}</p>
             <Thumbs up={up} down={down} handleUp={handleUp} handleDown={handleDown}/>
-            <button onClick={handleClick}> {showComment? "Show less" : "Show User Comment"} <GoComment /> </button>
+            <button className="user" onClick={handleClick}> {showComment? "Show less" : "Show User Comment"} <GoComment /> </button>
             <p>{showComment? [comment]: null}</p>
             <button onClick={handleDeleteClick}> Delete Post <SlTrash /></button>
             </div>
@@ -77,11 +77,12 @@ export default Post;
 const PostDetail = styled.div`
 display-direction:flex;
 flex-direction:column;
-color:red;
-margin: 5px;
-font-family: Arial, sans-serif;
+color:black;
+margin: auto;
+text-align: center;
+font-family: "Times New Roman", Times, serif
 h3{
-    font-size:44px;
+    font-size:30px;
     border-bottom:solid;
     border-color:#42ddf5
 }
@@ -93,12 +94,22 @@ h3{
 }
 img{
     width:600px;
+    margin: 10px;
+
 }
 button{
     background-color: #42ddf5
     color: white;
-    height: 40px;
+    height: 30px;
     font-size: 30px
-    margin-top: 8px;
+    margin-top: 15px;
+}
+.post{
+    padding-bottom: 20px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(135, 206, 235, .2)
+}
+.user{
+    margin-top: 10px;
 }
 `
