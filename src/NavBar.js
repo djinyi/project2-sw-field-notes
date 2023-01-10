@@ -1,4 +1,4 @@
-import React from "react";
+src/NavBar.jsimport React from "react";
 import { NavLink } from "react-router-dom";
 
 function NavBar() {
@@ -16,9 +16,7 @@ function NavBar() {
             <NavLink to="/submitpost">
                 Submit a Post 
             </NavLink>
-            <NavLink to="/LogIn">
-                Login
-            </NavLink>
+
         </div>
     )
 }
