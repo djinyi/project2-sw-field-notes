@@ -1,16 +1,23 @@
 import React from "react";
 import About from "./About";
 import PostList from "./PostList";
+import styled from "styled-components";
 
 function Home() {
     return (
-        <section>
-            Respect the Land.
+        <HomeStyle>
+            <img src="https://i.imgur.com/xSWDe7t.jpg"></img>
 
-            <About />
-            <PostList />
-        </section>
+        </HomeStyle>
     )
 }
 
 export default Home;
+
+const HomeStyle = styled.div`
+img{
+    max-width: 100%;
+    height: auto;
+    opacity: .75;
+}
+`
