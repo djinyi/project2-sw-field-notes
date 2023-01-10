@@ -7,6 +7,9 @@ function NewPost() {
     const [image, setImage] = useState("");
     const [location, setLocation] = useState("");
     const [date, setDate] = useState("");
+    const [comment, setComment] = useState("")
+    const upvotes = 0
+    const downvotes =0
 
 
     const history = useHistory();
@@ -14,9 +17,9 @@ function NewPost() {
     function handleSubmit(e) {
         e.preventDefault();
         const formData = {
-            post : { name, user, image, location, date }
+             name, user, image, location, date, comment, upvotes, downvotes 
         }
-        fetch("/sites", {
+        fetch("http://localhost:3004/sites", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -25,9 +28,10 @@ function NewPost() {
         })
         .then((r) => r.json())
         .then(data => {
-            history.push(`/projects/${data.project.id}`)
+            history.push(`/PostDetail`)
         })
     }
+
 
     return (
         <section>
@@ -54,7 +58,7 @@ function NewPost() {
             value={image}
             onChange={e => setImage(e.target.value)}
             />
-            <label>Location</label>
+            <label>State</label>
             <input
             type="text"
             id="location"
@@ -67,7 +71,16 @@ function NewPost() {
             id="date"
             value={date}
             onChange={e => setDate(e.target.value)}
+            placeholder="--/--/--"
             />
+            <label>Comment</label>
+            <input
+            type="text"
+            id="date"
+            value={comment}
+            onChange={e => setComment(e.target.value)}
+            />
+            <button type="submit"> Submit </button>
             </form>
             </section>
     )

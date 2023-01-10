@@ -14,7 +14,7 @@ function NavBar() {
                 Notes
             </NavLink>
             <NavLink to="/submitpost">
-                Submit a Post
+                Submit a Post 
             </NavLink>
             <NavLink to="/LogIn">
                 Login
