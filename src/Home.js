@@ -6,7 +6,7 @@ import styled from "styled-components";
 function Home() {
     return (
         <HomeStyle>
-            <img src="https://i.imgur.com/xSWDe7t.jpg"></img>
+            <img src="https://i.imgur.com/kyblMxa.jpg"></img>
 
         </HomeStyle>
     )
