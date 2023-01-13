@@ -3,11 +3,14 @@ import Thumbs from "./Thumbs";
 import styled from "styled-components";
 import { GoComment } from "react-icons/go";
 import { SlTrash } from "react-icons/sl";
+import { useHistory } from "react-router-dom";
 
 function Post({ id, title, user, image, location, comment, upvotes, downvotes, onDeletePost, post }) {
     const [showComment, setShowComment] = useState(false);
     const [up, setUp] = useState(upvotes);
     const [down, setDown] = useState(downvotes)
+
+    const history = useHistory();
 
     function handleClick() {
         return setShowComment((showComment) => !showComment)
@@ -27,7 +30,7 @@ function Post({ id, title, user, image, location, comment, upvotes, downvotes, o
             }),
         })
         .then((r) => r.json())
-        .then((updated) => console.log(updated))
+        .then((updated) => setUp(updated.upvotes))
     }
 
     function handleDown(down) {
@@ -44,7 +47,7 @@ function Post({ id, title, user, image, location, comment, upvotes, downvotes, o
          }),
      })
      .then((r) => r.json())
-     .then((updated) => console.log(updated))
+     .then((updated) => setDown(updated.downvotes))
  }
 
  function handleDeleteClick() {
