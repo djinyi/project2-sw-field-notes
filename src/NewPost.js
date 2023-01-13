@@ -2,23 +2,22 @@ import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 import styled from "styled-components";
 
-function NewPost() {
+function NewPost({ addNewPost }) {
     const [name, setName] = useState("");
     const [user, setUser] = useState("");
     const [image, setImage] = useState("");
     const [location, setLocation] = useState("");
     const [date, setDate] = useState("");
-    const [comment, setComment] = useState("")
+    const [comments, setComments] = useState("")
     const upvotes = 0
     const downvotes =0
-
 
     const history = useHistory();
 
     function handleSubmit(e) {
         e.preventDefault();
         const formData = {
-             name, user, image, location, date, comment, upvotes, downvotes 
+             name, user, image, location, date, comments, upvotes, downvotes 
         }
         fetch("http://localhost:3004/sites", {
             method: "POST",
@@ -28,9 +27,15 @@ function NewPost() {
             body: JSON.stringify(formData)
         })
         .then((r) => r.json())
-        .then(data => {
-            history.push(`/PostDetail`)
-        })
+        .then((newPost) => addNewPost(newPost))
+        .then(() => history.push('/PostList'))
+        setName("");
+        setUser("");
+        setImage("");
+        setLocation("");
+        setLocation(" ");
+        setDate(" ");
+        setComments(" ")
     }
 
 
@@ -78,8 +83,8 @@ function NewPost() {
             <input
             type="text"
             id="date"
-            value={comment}
-            onChange={e => setComment(e.target.value)}
+            value={comments}
+            onChange={e => setComments(e.target.value)}
             />
             <button type="submit"> Submit </button>
             </form>
