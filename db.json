@@ -8,8 +8,8 @@
       "location": "Arizona",
       "date": "September 4, 2022",
       "comments": "The hike was easy. Worth it for the views!",
-      "upvotes": 8,
-      "downvotes": 13
+      "upvotes": 14,
+      "downvotes": 15
     },
     {
       "id": 2,
@@ -35,14 +35,14 @@
     },
     {
       "id": 4,
-      "user": "El Malpais National Conservation Area",
-      "poster": "Miles RazorBeak",
+      "name": "El Malpais National Conservation Area",
+      "user": "Miles RazorBeak",
       "image": "https://i.imgur.com/3NfT5PS.png",
       "location": "Arizona",
       "date": "October 22nd, 2022",
       "comments": "Don't mess with the cairns. The volunteers meticulously keep them there so that people don't get lost. (It's happened.)",
-      "upvotes": 11,
-      "downvotes": 2
+      "upvotes": 15,
+      "downvotes": 4
     },
     {
       "id": 5,
