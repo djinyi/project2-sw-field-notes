@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Post from "./Post";
-import { Link } from "react-router-dom";
 import styled from "styled-components";
+import NewPost from "./NewPost";
 
 function PostList() {
     const [posts, setPosts] = useState([]);
@@ -16,6 +16,10 @@ function PostList() {
         const updatedPosts = posts.filter((poster) => poster.id !== post.id);
         setPosts(updatedPosts)
         console.log("HI")
+    }
+
+    function addNewPost(newPost) {
+        setPosts([...posts, newPost])
     }
 
     const post = posts.map((post) => (
@@ -38,7 +42,7 @@ function PostList() {
         <PostStyle className="body">
             <h2>Posts</h2>
             <div>{post}</div>
-            <Link to={`/submitpost`}>Submit New Post</Link>
+            <NewPost addNewPost={addNewPost} />
 
         </PostStyle>
     )
