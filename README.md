@@ -6,7 +6,7 @@ The Southwest Fieldnotes is a [single page application](https://en.wikipedia.org
 
 The Southwest Fieldnotes consists of homepage with the title of the website. 
 
-![homepage](https://media.giphy.com/media/1HjdcM5L14YrfDj9Ed/giphy.gif](https://i.imgur.com/g6lwZl5.png)
+![homepage](https://i.imgur.com/g6lwZl5.png)
 
 Above is a navigation bar that links you to the About page that gives you information about the website and the guidelines set to visit archeological sites. 
 
