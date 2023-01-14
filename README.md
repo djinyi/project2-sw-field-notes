@@ -26,5 +26,5 @@ Or they may even delete posts.
 
 The site also includes a submission page so that users can also post their own experiences. A post must include an image, title, place, date, and user's own name. 
 
-![post](https://media.giphy.com/media/ipWdVIG9EYvIpsaFJg/giphy.gif)
+![post](https://media.giphy.com/media/w8975frCXeUKL029Rx/giphy.gif)
 
