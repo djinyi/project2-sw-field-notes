@@ -8,7 +8,11 @@ The Southwest Fieldnotes consists of homepage with the title of the website.
 
 ![homepage](https://i.imgur.com/g6lwZl5.png)
 
-Above is a navigation bar that links you to the About page that gives you information about the website and the guidelines set to visit archeological sites. On the navigation bar, there are also links to Notes where you will find a list of posts submitted by users, and the link to submit a new post. 
+Above is a navigation bar that links you to the About page that gives you information about the website and the guidelines set to visit archeological sites. 
+
+![About](https://i.imgur.com/lAE5RDG.png)
+
+On the navigation bar, there are also links to Notes where you will find a list of posts submitted by users, and the link to submit a new post. 
 
 ## Features
 
