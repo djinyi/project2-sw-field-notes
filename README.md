@@ -18,11 +18,11 @@ On the navigation bar, there are also links to Notes where you will find a list 
 
 Visitors of the page can share their thoughts with the thumbs up or down feature added to each post.
 
-![delete](https://media.giphy.com/media/Y9SScMWf5IajaaYBDT/giphy.gif)
+![thumbs](https://media.giphy.com/media/Y9SScMWf5IajaaYBDT/giphy.gif)
 
 Or they may even delete posts. 
 
-![thumbs](https://media.giphy.com/media/1HjdcM5L14YrfDj9Ed/giphy.gif)
+![delete](https://media.giphy.com/media/1HjdcM5L14YrfDj9Ed/giphy.gif)
 
 The site also includes a submission page so that users can also post their own experiences. A post must include an image, title, place, date, and user's own name. 
 
