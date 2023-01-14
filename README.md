@@ -16,5 +16,7 @@ On the navigation bar, there are also links to Notes where you will find a list 
 
 ## Features
 
-Visitors of the page can share their thoughts with the thumbs up or down feature added to each post or they may even delete posts. The site also includes a submission page so that users can also post their own experiences. A post must include an image, title, place, date, and user's own name.
+Visitors of the page can share their thoughts with the thumbs up or down feature added to each post or they may even delete posts. The site also includes a submission page so that users can also post their own experiences. A post must include an image, title, place, date, and user's own name. 
+
+![post](https://media.giphy.com/media/ipWdVIG9EYvIpsaFJg/giphy.gif)
 
