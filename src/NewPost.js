@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 import styled from "styled-components";
 
-function NewPost({ addNewPost }) {
+function NewPost({ addNewPost}) {
     const [name, setName] = useState("");
     const [user, setUser] = useState("");
     const [image, setImage] = useState("");
@@ -28,7 +28,7 @@ function NewPost({ addNewPost }) {
         })
         .then((r) => r.json())
         .then((newPost) => addNewPost(newPost))
-        .then(() => history.push('/PostList'))
+        
         setName("");
         setUser("");
         setImage("");
@@ -36,6 +36,12 @@ function NewPost({ addNewPost }) {
         setLocation(" ");
         setDate(" ");
         setComments(" ")
+        
+        newPage();
+    }
+
+    function newPage(){
+        history.push('/PostList')
     }
 
 

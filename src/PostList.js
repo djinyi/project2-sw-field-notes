@@ -1,28 +1,15 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Post from "./Post";
 import styled from "styled-components";
-import NewPost from "./NewPost";
 
-function PostList() {
-    const [posts, setPosts] = useState([]);
-    
-    useEffect(() => {
-        fetch("http://localhost:3004/sites")
-        .then((r) => r.json())
-        .then(data => setPosts(data))
-    }, [])
-    
-    function handleDeletePost(post) {
-        const updatedPosts = posts.filter((poster) => poster.id !== post.id);
-        setPosts(updatedPosts)
-        console.log("HI")
-    }
 
-    function addNewPost(newPost) {
-        setPosts([...posts, newPost])
-    }
+function PostList({posts, handleDeletePost}) {
 
-    const post = posts.map((post) => (
+
+    return(
+        <PostStyle className="body">
+            <h2>Posts</h2>
+            <div>{posts.map((post) => (
         <Post
         key={post.id}
         id={post.id}
@@ -35,14 +22,8 @@ function PostList() {
         downvotes={post.downvotes}
         onDeletePost={handleDeletePost}
         post={post}
-        />
-    ))
-
-    return(
-        <PostStyle className="body">
-            <h2>Posts</h2>
-            <div>{post}</div>
-            <NewPost addNewPost={addNewPost} />
+        />))}</div>
+           
 
         </PostStyle>
     )

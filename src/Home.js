@@ -4,7 +4,7 @@ import styled from "styled-components";
 function Home() {
     return (
         <HomeStyle>
-            <div>
+            <div className="container">
             <img src="https://i.imgur.com/kyblMxa.jpg"></img>
             <h3 className="text">Southwest Fieldnotes</h3>
             </div>
@@ -16,6 +16,9 @@ function Home() {
 export default Home;
 
 const HomeStyle = styled.div`
+.container{
+    position: relative;
+}
 img{
     max-width: 100%;
     height: auto;
@@ -23,7 +26,7 @@ img{
 }
 .text{
     position:absolute;
-    top: 55%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
