@@ -3,13 +3,13 @@
     {
       "id": 1,
       "name": "Tonto National Monument",
-      "user": "Lunis the Loon",
+      "user": "Miles RazorBeak",
       "image": "https://i.imgur.com/ZfVM9DM.png",
       "location": "Arizona",
-      "date": "September 4, 2022",
-      "comments": "The hike was easy. Worth it for the views!",
-      "upvotes": 14,
-      "downvotes": 15
+      "date": "September 1st, 2022",
+      "comments": "No regrets visiting here.",
+      "upvotes": 4,
+      "downvotes": 3
     },
     {
       "id": 2,
@@ -19,8 +19,8 @@
       "location": "Arizona",
       "date": "October 1st, 2022",
       "comments": "Beautiful place. Can get busy.",
-      "upvotes": 19,
-      "downvotes": 2
+      "upvotes": 20,
+      "downvotes": 3
     },
     {
       "id": 3,
